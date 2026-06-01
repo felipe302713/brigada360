@@ -94,13 +94,13 @@ ON CONFLICT DO NOTHING;
 
 -- Rondas de hoje
 INSERT INTO rondas (id, nome, checklist_id, data_programada, horario_programado, status) VALUES
-  ('g1000000-0000-0000-0000-000000000001', 'Ronda das 09h30', 'c1000000-0000-0000-0000-000000000001', CURRENT_DATE, '09:30', 'concluida'),
-  ('g1000000-0000-0000-0000-000000000002', 'Ronda das 14h30', 'c1000000-0000-0000-0000-000000000001', CURRENT_DATE, '14:30', 'pendente'),
-  ('g1000000-0000-0000-0000-000000000003', 'Ronda das 16h30', 'c1000000-0000-0000-0000-000000000001', CURRENT_DATE, '16:30', 'pendente')
+  ('a7000000-0000-0000-0000-000000000001', 'Ronda das 09h30', 'c1000000-0000-0000-0000-000000000001', CURRENT_DATE, '09:30', 'concluida'),
+  ('a7000000-0000-0000-0000-000000000002', 'Ronda das 14h30', 'c1000000-0000-0000-0000-000000000001', CURRENT_DATE, '14:30', 'pendente'),
+  ('a7000000-0000-0000-0000-000000000003', 'Ronda das 16h30', 'c1000000-0000-0000-0000-000000000001', CURRENT_DATE, '16:30', 'pendente')
 ON CONFLICT DO NOTHING;
 
 -- Ocorrências
 INSERT INTO ocorrencias (id, numero, tipo, setor_id, criticidade, status, descricao, data_hora_abertura) VALUES
-  ('h1000000-0000-0000-0000-000000000001', 'OC-2026-001', 'Equipamento próximo do vencimento', 'a1000000-0000-0000-0000-000000000003', 'media', 'em_acompanhamento', 'Extintor EXT-018 na cobertura está com vencimento próximo. Necessário agendar recarga.', '2026-05-28 10:30:00'),
-  ('h1000000-0000-0000-0000-000000000002', 'OC-2026-002', 'Rota de fuga parcialmente obstruída', 'a1000000-0000-0000-0000-000000000004', 'alta', 'pendente', 'Materiais de cenografia parcialmente obstruindo saída de emergência lateral do teatro.', '2026-05-29 14:15:00')
+  ('a8000000-0000-0000-0000-000000000001', 'OC-2026-001', 'Equipamento próximo do vencimento', 'a1000000-0000-0000-0000-000000000003', 'media', 'em_acompanhamento', 'Extintor EXT-018 na cobertura está com vencimento próximo. Necessário agendar recarga.', '2026-05-28 10:30:00'),
+  ('a8000000-0000-0000-0000-000000000002', 'OC-2026-002', 'Rota de fuga parcialmente obstruída', 'a1000000-0000-0000-0000-000000000004', 'alta', 'pendente', 'Materiais de cenografia parcialmente obstruindo saída de emergência lateral do teatro.', '2026-05-29 14:15:00')
 ON CONFLICT DO NOTHING;
